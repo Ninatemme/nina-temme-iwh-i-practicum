@@ -56,3 +56,53 @@ input[type="submit"] {
     padding: .375rem 1rem;
     margin-top: 10px;
 }
+
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  table-layout: fixed;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.data-table thead th {
+  background: #ff8c00;
+  color: #fff;
+  text-align: left;
+  padding: 12px 14px;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+.data-table tbody td {
+  padding: 12px 14px;
+  border-top: 1px solid #f0f0f0;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.data-table tbody tr:nth-child(odd) {
+  background: #fafafa;
+}
+
+.data-table tbody tr:hover {
+  background: #fff3e6;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #2b7cff;
+  color: #fff;
+  font-weight: 600;
+}

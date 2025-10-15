@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title= title
+    link(rel="stylesheet", href="/public/css/style.css")
+  body
+    main.container
+      h1= title
+      p
+        a.button(href="/") Return to the homepage
+
+      .form-wrapper
+        form(method="POST" action="/update-cobj")
+          .field
+            label(for="name") Name (required)
+            input(type="text" id="name" name="name" required placeholder="e.g. Jane")
+
+          .field
+            label(for="animal") Animal
+            input(type="text" id="animal" name="animal" placeholder="e.g. Cat")
+
+          .field
+            label(for="birth_country") Birth Country
+            textarea(id="birth_country" name="birth_country" rows="3" placeholder="e.g. Netherlands")
+
+          button.button(type="submit") Create record
